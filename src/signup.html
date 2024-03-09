@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="form-container" id="formpageBody">
+        <div class="form" style="margin-top: 30px; margin-bottom: 30px;" id="formpageForm">
+            <a style="" href="./home.html"><h2 style="margin-left: 40px; margin-top: 0px; margin-bottom: 40px;">Converter</h2></a>
+            <form action="" style="margin-left: -30px;">
+                <input type="text" id="name" name="name" required style="height: 30px; width: 200px; margin-left: 57px; border-radius: 5px;"placeholder="Name" >
+                <br><br><br>
+                <input type="text" id="username" name="username" required style="height: 30px; width: 200px; margin-left: 57px; border-radius: 5px;"placeholder="Username" >
+                <br><br><br>
+                <input type="email" id="email" name="email" required style="height: 30px; width: 200px; margin-left: 57px; border-radius: 5px;" placeholder="Email">
+                <br><br><br>
+                <input type="password" id="password" name="password" required style="height: 30px; width: 200px; margin-left: 57px; border-radius: 5px;"placeholder="Password" >
+                <br><br>
+                <input type="button" value="Sign Up" style="margin-left: 110px; margin-top: 5px; width: 110px; height: 40px; border-radius: 10px; background-color: midnightblue; color: lavender; font-family: 'Cormorant Infant', serif;" onclick="signup()">
+            </form>
+            <p style="margin-top: 30px; font-size: 20px; margin-left: 10px;">Already registered? <a href="login.html" style="color:lightblue;">Log in here</a></p>
+            <div id="signupmsg" style="margin-top: 40px; color: lightblue; font-size: 15px; margin-left: 10px; "></div>
+        </div>
+    </div>
+</body>
+</html>

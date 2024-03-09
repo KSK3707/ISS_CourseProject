@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img2VDo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container" id="outputBody">
+        <header>
+            <h1>Image to Video Converter</h1>
+        </header>
+
+    <div class="createVideo">
+        <table id="images">
+            <tr>
+                <td>
+                    <img src="localMedia/cat1.jpg" />
+                </td>
+                <td>
+                    <img src="localMedia/cat2.jpg" />
+                </td>
+                <td>
+                    <img src="localMedia/cat3.jpg" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="localMedia/cat4.jpg" />
+                </td>
+                <td>
+                    <img src="localMedia/cat5.jpg" />
+                </td>
+                <td>
+                    <img src="localMedia/cat6.jpg" />
+                </td>
+            </tr>
+        </table>
+        <button id="createButton">Create a Video</button>
+    </div>
+
+    <div class="preview-section">
+        <h2>Preview</h2>
+        <video src="localMedia/mockVideo.mp4" id="videoPreview" controls></video>
+    </div>
+    <div id="downloads">
+        <button id="downloadButton">Download</button>
+        <div id="buttonDropdown">
+            <a>144p</a>
+            <a>240p</a>
+            <a>360p</a>
+            <a>480p</a>
+            <a>720p</a>
+            <a>1080p</a>
+        </div>
+    </div>
+        </div>
+
+    <footer>
+        <p>&copy; 2024 Image to Video Converter. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

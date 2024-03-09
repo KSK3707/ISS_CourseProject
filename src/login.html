@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="form-container" id="formpageBody">
+        <div class="form" style="margin-top: 30px; margin-bottom: 30px;" id="formpageForm">
+            <h2 style="margin-left: 40px; margin-top: 0 px; margin-bottom: 40px;" onclick="redirect()">Converter</h2>
+            <form action="" style="margin-left: -30px;">
+                <input type="text" id="email" name="email" required style="height: 30px;width: 200px;margin-left: 57px; border-radius:5px;" placeholder="Email">
+                <br><br><br>
+                <input type="password" id="password" name="password" required style="height: 30px; width: 200px; margin-left: 57px; border-radius: 5px;"placeholder="Password" >
+                <br><br>
+                <input type="button" value="Login" style="margin-left: 110px; margin-top: 5px; width: 110px; height: 40px;border-radius: 10px; background-color: midnightblue; color: lavender; font-family: 'Cormorant Infant', serif;" onclick="login()">
+            </form>
+            <p style="margin-top: 30px; font-size: 20px; margin-left: 10px;">Don't have an account? <a href="signup.html" style="color:lightblue;">Signup here</a></p>
+            <div id="loginmsg" style="margin-top: 40px; color: lightblue; font-size: 15px; margin-left: 10px; "></div>
+        </div>
+    </div>
+</body>
+</html>

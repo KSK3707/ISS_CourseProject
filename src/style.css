@@ -1,0 +1,224 @@
+/* landing page section starts here */
+
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Cormorant Infant", serif;
+    background-color: black;
+    min-height: 100vh; /* Minimum height to fill the screen */
+    display: flex;
+    flex-direction: column;
+    color: lavender;
+}
+
+.container {
+    max-width: 1800px;
+    margin: auto;
+    padding: 20px;
+    flex: 1; /* Allows the container to grow and push the footer down */
+}
+
+/* Header Styles */
+header {
+    font-family: "Cormorant Infant", serif;
+    text-align: center;
+    padding: 20px 0;
+    background-color: indigo;
+    color: lavender;
+    border-radius: 10px;
+}
+
+/* Section Styles */
+.upload-section, .video-customization-section, .preview-section {
+    background: indigo;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Interaction Styles */
+.drop-area {
+    border: 2px dashed lightblue;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.drop-area:hover, .drop-area:focus {
+    background-color: midnightblue;
+}
+
+.file-select {
+    color: lightblue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.customization-controls {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between flex items */
+}
+
+.duration-and-effect {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Increases gap for better spacing */
+}
+
+.duration-and-effect div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Button Styles with Improved Spacing */
+button {
+    background-color: indigo;
+    color: lavender;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px; /* Adds margin to create spacing around buttons */
+    font-family: "Cormorant Infant", serif;
+}
+
+button:hover {
+    background-color: midnightblue;
+    border:1px solid lightblue;
+}
+
+/* Input and Select Styles */
+input[type="number"], select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightblue;
+    background-color: indigo;
+    color: lavender;
+}
+
+/* Video Styles */
+video {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 10px 0;
+    background-color: indigo;
+    color: lavender;
+    width: 100%; /* Ensure footer width matches the page */
+    border-top: 1px solid lavender; /* Adjusted border color for a refined look */
+}
+
+    footer p {
+        margin: 0;
+        padding: 10px;
+    }
+
+/* home page section ends here */
+
+/* create video page starts here */
+#downloadButton{
+    width: 15vw;
+    margin-left: 19vw;
+}
+
+#createButton{
+    width: 15vw;
+    margin-left: 19vw;
+    margin-top: 1.5vw;
+}
+
+#outputBody {
+    width: 55vw;
+}
+
+#buttonDropdown {
+    display: none;
+    position: absolute;
+    background-color: lavender;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#buttonDropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#buttonDropdown a:hover {
+    background-color: midnightblue;
+    border: 1px solid lightblue;
+}
+
+#downloads:hover #buttonDropdown {
+    display: inline-flex;
+}
+
+#downloads:hover #downloadButton {
+    background-color: midnightblue;
+    border: 1px solid lightblue;
+}
+
+img{
+    width: 17.2vw;
+    height: auto;
+}
+
+#images{
+    margin-top: 1.5vw;
+}
+/*create video page ends here */
+
+/* landing page starts here */
+#signUp {
+    display: flex;
+    margin: auto;
+}
+#login {
+    display: flex;
+    margin: auto;
+}
+
+#landingArea {
+    display:flex;
+    height: 10vw;
+    width: 50vw;
+}
+/* landing page starts here */
+
+/* login page starts here */
+#formpageBody{
+    align-self: center;
+}
+
+#formpageForm{
+    background-color: indigo;
+    padding: 7px;
+    padding-right: 7px;
+    padding-left: 7px;
+    border-radius: 10px;
+}
+
+
+a, a:link, a:visited, a:focus, a:hover, a:active{
+    text-decoration: none;
+    color: lightblue;
+}
+
+#imageInput {
+display: None
+}

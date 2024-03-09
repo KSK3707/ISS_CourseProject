@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Images</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header><h1>Upload Images</h1></header>
+    <div class="upload-section">
+      <form id="uploadImageForm">
+        <input type="file" id="imageInput" multiple accept="image/png, image/jpeg" />
+        <div id="dropArea" class="drop-area">Drag and Drop Images Here or <span class="file-select">Select Files</span></div>
+      </form>
+    </div>
+    <div>
+      <button id="uploadImageSubmit" onclick="upload()" style="margin-inline: auto;display:flex;">Upload</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+  <footer>
+    <p>&copy; 2024 Image to Video Converter. All rights reserved.</p>
+  </footer>
+</body>
+</html>
