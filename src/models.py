@@ -14,7 +14,15 @@ class User(db.Model):
 class Image(db.Model):
     __tablename__ = "Image"
     id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, ForeignKey(User.id))
     image_path = db.Column(db.String)
+
+
+class Music(db.Model):
+    __tablename__ = "music"
+    id = db.Column(db.Integer, primary_key=True)
+    music_path = db.Column(db.String)
+    user_id = db.Column(db.Integer, ForeignKey(User.id))
 
 
 class VideoFrame(db.Model):
@@ -36,13 +44,7 @@ class Video(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, ForeignKey(User.id))
     name = db.Column(db.String(80))
+    music = db.Column(db.Integer, ForeignKey(Music.id))
     frames = db.relationship("VideoFrame",
                              secondary=video_to_frame_table)
-
-
-class Music(db.Model):
-    __tablename__ = "music"
-    id = db.Column(db.Integer, primary_key=True)
-    music_path = db.Column(db.String)
-    duration = db.Column(db.Integer)
 

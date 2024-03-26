@@ -18,45 +18,20 @@
 
     <div class="createVideo">
         <table id="images">
-            <tr>
-                <td>
-                    <img src="localMedia/cat1.jpg" />
-                </td>
-                <td>
-                    <img src="localMedia/cat2.jpg" />
-                </td>
-                <td>
-                    <img src="localMedia/cat3.jpg" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="localMedia/cat4.jpg" />
-                </td>
-                <td>
-                    <img src="localMedia/cat5.jpg" />
-                </td>
-                <td>
-                    <img src="localMedia/cat6.jpg" />
-                </td>
-            </tr>
         </table>
-        <button id="createButton">Create a Video</button>
+        <button id="createButton" onclick="getMyVideoPreview()">Create a Video</button>
     </div>
 
     <div class="preview-section">
         <h2>Preview</h2>
-        <video src="localMedia/mockVideo.mp4" id="videoPreview" controls></video>
+        <video src="" id="videoPreview" controls></video>
     </div>
     <div id="downloads">
         <button id="downloadButton">Download</button>
         <div id="buttonDropdown">
-            <a>144p</a>
-            <a>240p</a>
-            <a>360p</a>
-            <a>480p</a>
-            <a>720p</a>
-            <a>1080p</a>
+            <a download>360p</a>
+            <a download>720p</a>
+            <a download>1080p</a>
         </div>
     </div>
         </div>
@@ -64,6 +39,6 @@
     <footer>
         <p>&copy; 2024 Image to Video Converter. All rights reserved.</p>
     </footer>
-
+<script>getMyVideoFrames()</script>
 </body>
 </html>
